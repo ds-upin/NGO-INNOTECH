@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peepal Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <link rel = "stylesheet" href="../CSS/animal_info.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <div class="nav-logo">
+                </div>
+                <a href="index.html" style="text-decoration:none; color:white;">PEEPAL FARM</a>
+            </div>        
+
+           <div class="tabs">
+                    <div class="home tab-style">
+                        <a href="../">Home</a>
+                    </div>
+
+                    <div class="our_gallery tab-style">
+                        <a href="../our_gallery">Our Gallery</a>
+                    </div>
+
+                    <div class="adoptions tab-style">
+                        <a  href="../animals">adoptions</a>
+                    </div>
+
+                    <div class="membership tab-style">
+                        <a  href="../membership">Membership</a>
+                    </div>
+
+                    <div class="donation tab-style">
+                        <a  href="../donation"> donation </a>
+                    </div>
+
+                    <div class="about_us tab-style">
+                        <a href="../About_Us">About Us</a>
+                    </div>
+
+           </div>
+        </div>
+    </header>
+    
+    <div class="container">
+            <div class="animal_name"><%= dd[0].name%></div>
+            <div class="animal_image" style="background-image: url('../image?name=<%= dd[0].img%>');"></div>
+            
+            <div class="animal_age">
+               <p style="color:rgb(87, 87, 87);">Age</p>
+               <p>:</p>
+               <p style="color:rgb(1, 183, 1)"><%= dd[0].age%> months</p>
+            </div>
+            <div class="animal_gender">
+                <p style="color:rgb(87, 87, 87);">Gender</p>
+                <p>:</p>
+                <p style="color:rgb(1, 183, 1);"><%= dd[0].gender%></p>
+            </div>
+            <div class="animal_type">
+                <p style="color:rgb(87, 87, 87);">Animal Type</p>
+                <p>:</p>
+                <p style="color:rgb(1, 183, 1);"><%= dd[0].species%></p>
+            </div>
+
+            <div class="contact">
+                <button class="contact_button" href="https://whatsapp.com/channel/0029VaryIauB4hdUFeadKD2s"><p>Contact Us</p><p>|</p><i class="fa-solid fa-phone"></i></button>
+                <button class="video_contact_button" href="video.html"><p>Join Us on Video Call</p><p>|</p><i class="fa-solid fa-video"></i></button>
+                <script src="animal_info.js"></script>
+
+            </div>
+    </div>
+ 
+</body>
+</html>

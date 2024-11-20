@@ -32,6 +32,23 @@ app.get('/membership',(req,res)=>{ res.render('membership')});
 //app.get('/adoptions',(req,res)=> res.render('adoptions'));
 app.get('/About_Us',(req,res)=> res.render('About_Us'));
 app.get('/video',(req,res)=>{res.render('')});
+app.get('/animal_info/:id', async (req, res) => {
+  const info = req.params.id;
+  
+  try {
+    const dd = await animaldb.find({img: info});
+    
+    if (dd.length === 0) {
+      return res.json({'msg':"wrong"});
+    }
+    console.log(dd);
+    res.render('animal_info', {dd});
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error retrieving data from the database.");
+  }
+});
+
 
 
 

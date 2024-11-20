@@ -25,17 +25,18 @@
     display:flex;
     align-items:center;
     justify-content:space-evenly;
-    color:white;
     font-size:1.55rem;
     font-weight:700;
+    color:white;
     border-right:1px solid #c96500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:none;
 }
 
 .nav-logo{
     height:78%;
     width:77px;
-    background-image:url("../statics/logo.jpeg");
+    background-image:url("logo.jpeg");
     background-size:cover;
 }
 
@@ -76,61 +77,132 @@
     font-weight:500;
     color:white;
 }
-#form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#gender, #age-group{
 
-}
-.content{
-  padding:20px;
-  width:60%;
-  margin-top:50px;
-  margin-left:280px;
-  margin-bottom:50px;
-  background-color:white;
-  border-radius:10px;
-  box-shadow:10px 10px 10px rgb(0,0,0,0.5);
+body{
+    background-color:#d5bc93;
 }
 
-.content-div{
-    display:flex;
-    flex-wrap:wrap;
+
+.container{
+    width:60%;
+    border-radius:10px;
+    background-color:white;
+    margin:0 auto ; 
+    margin-top:100px;
     padding:20px;
-    align-items: center;
-    justify-content: space-evenly;
+    margin-bottom: 100px;
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
 }
 
-
-
-.content-box{
-    height:400px;
-    width:220px;
-    margin:10px;
+.animal_name{
+    font-size:50px;
+    color:brown;
+    font-weight:600;
+    text-align:center;
 }
 
-#genderFilter{
-    /* position:relative; */
-    height:42px;
-    width:400px;
+.animal_image{
+    height:600px;
+    width:80%;
+    margin:0 auto;
+    background-image:url("adoption_images/image1 (2).png");
+    background-size:cover;
+    margin-top:20px;
+    box-shadow : 0 0 10px rgba(0,0,0,0.8);
     border-radius:10px;
 }
 
-#Modify{
-    height:42px;
-    width:100px;
-    background-color:#c96500;
-    color:white;
-    border-radius:10px;
+.animal_age{
+    height:20px; 
+    width: 80%;
+    padding:20px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:0 auto ; 
+    margin-top:30px;
+    border-bottom:1px solid grey;
+}
+
+.animal_age p{
+    font-size:20px;
+    font-weight:400;
+}
+
+.animal_gender{
+    height:20px; 
+    width: 80%;
+    padding:20px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:0 auto ;
+    border-bottom: 1px solid grey ;  
+}
+
+.animal_gender p{
+    font-size:20px;
+    font-weight:400;
+}
+
+.animal_type{
+    height:20px; 
+    width: 80%;
+    padding:20px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:0 auto ;
+    border-bottom: 1px solid grey ; 
+    margin-bottom:100px;
+}
+
+.animal_type p{
+    font-size:20px;
+    font-weight:400;
+}
+
+.contact_button{ 
     border:none;
+    height:50px;
+    width:20%;
+    font-size:16px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    color:white;
+    background-color:red;
+    font-weight:500;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+
 }
 
-.content_div{
-    width:100%;
-    margin: 0 auto;
+.contact{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
 }
+
+.video_contact_button{
+    border:none;
+    height:50px;
+    width:30%;
+    font-size:16px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    color:white;
+    background-color:rgb(0, 133, 186);
+    font-weight:500;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+}
+
+
+
+
+
 
 
 /**foot-panel**/
@@ -140,7 +212,7 @@
 .foot-panel{
     height:400px;
     width:100%;
-    background-image:url("../statics/image6.jpg");
+    background-image:url("static/image6.jpg");
     background-size:cover;
     opacity:80%;
     z-index:-1;
@@ -228,12 +300,3 @@
     text-align:center;
     margin-top:20px;
 }
-
-
-
-
-
-
-
-
-

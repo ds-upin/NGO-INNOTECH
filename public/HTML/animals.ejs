@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="adoptions tab-style">
-                        <a  href="../adoptions">adoptions</a>
+                        <a  href="../animals">adoptions</a>
                     </div>
 
                     <div class="membership tab-style">
@@ -48,7 +48,7 @@
         <div class="content-heading" style="padding:20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#5d4529; ">
             <h1>Animals For Adoption</h1>
         </div>
-        <form method="GET" action="/animals">
+        <form method="GET" action="/animals" id="form">
             <div class="gender"style="display:inline-block; padding:20px">
                 <p style="font-size:1rem; font-family:sans-serif; font-weight:500;">Gender</p>
                 <select name="gender" id="genderFilter">
@@ -66,14 +66,14 @@
                     <option value="6_years_plus" <%= ageRange === '6_years_plus' ? 'selected' : '' %>>Senior (6+ years)</option>
                 </select>
             </div>
-            <button type="submit" >Apply Filters</button>
+            <button type="submit"  id="Modify">Apply Filters</button>
         </form>
         <div class="content-div">
 
             <% if (animals.length > 0) { %>
                 <% animals.forEach(animal => { %>
     
-            <a href="abcd.com" style="text-decoration:none; color:green;" >
+            <a href="../animal_info/<%= animal.img %>" style="text-decoration:none; color:green;" >
                 <div class="content-box">
                     <img src="../image?name=<%= animal.img %>" alt="animal.name" style=" height: 67%; width:100%;border-radius:10px;">
                     <p style="text-align:center; padding:10px; font-family:Georgia, 'Times New Roman', Times, serif; font-size:20px; color:#009900;     font-weight:900;"><%= animal.name %></p>
@@ -104,7 +104,7 @@
             <ul style="list-style-type:none" >
                 <li><a href="../">Home</a></li>
                 <li><a href="../our_gallery">Our Gallery</a></li>
-                <li><a  href="../adoptions">adoptions</a></li>
+                <li><a  href="../animals">adoptions</a></li>
                 <li> <a  href="../membership">Membership</a></li>
                 <li><a  href="../donation"> donation </a></li>
                 <li><a href="../About_Us">About Us</a></li>
